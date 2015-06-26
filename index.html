@@ -17,6 +17,27 @@
             mapOptions);
       }
       google.maps.event.addDomListener(window, 'load', initialize);
+      var styleArray = [
+  {
+    featureType: "all",
+    stylers: [
+      { saturation: -80 }
+    ]
+  },{
+    featureType: "road.arterial",
+    elementType: "geometry",
+    stylers: [
+      { hue: "#00ffee" },
+      { saturation: 50 }
+    ]
+  },{
+    featureType: "poi.business",
+    elementType: "labels",
+    stylers: [
+      { visibility: "off" }
+    ]
+  }
+];
     </script>
   </head>
   <body>
